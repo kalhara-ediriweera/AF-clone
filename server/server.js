@@ -28,4 +28,3 @@ if(process.env.NODE_ENV !== "production"){
 }
 // Start the server
 
-export default server;
