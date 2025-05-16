@@ -4,27 +4,13 @@ body {
   color: #f4f7fa;
   margin: 0;
   padding: 0;
-  animation: backgroundAnimation 10s infinite alternate; /* Animation for background color */
+  background-image: url("../public/map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* Dynamic Background Animation */
-@keyframes backgroundAnimation {
-  0% {
-    background: linear-gradient(45deg, #0077b6, #00b4d8); /* Light blue to turquoise gradient */
-  }
-  25% {
-    background: linear-gradient(45deg, #90e0ef, #48cae4); /* Soft sky blue and bright cyan */
-  }
-  50% {
-    background: linear-gradient(45deg, #023e8a, #03045e); /* Deep ocean blues */
-  }
-  75% {
-    background: linear-gradient(45deg, #1d3557, #457b9d); /* Muted blue tones */
-  }
-  100% {
-    background: linear-gradient(45deg, #0077b6, #00b4d8); /* Repeat light blue to turquoise */
-  }
-}
+
+
 
 /* App Wrapper */
 .App {

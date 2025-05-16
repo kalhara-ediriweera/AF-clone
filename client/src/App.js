@@ -6,6 +6,7 @@ import CountryList from './components/CountryList';
 import SearchBar from './components/SearchBar';
 import RegionFilter from './components/RegionFilter';
 import LanguageFilter from './components/LanguageFilter';
+import CountryFullDetails from './components/CountryFullDetails';
 import Header from './components/Header';
 import Login from './pages/auth/Login';  // Ensure correct path
 import Register from './pages/auth/Register';  // Ensure correct path
@@ -64,6 +65,7 @@ function App() {
               </>
             }
           />
+          <Route path="/CountryFullDetails/:name" element={<CountryFullDetails />} />
           <Route path="/login" element={token ? <Navigate to="/" /> : <Login login={login} />} />
           <Route path="/register" element={token ? <Navigate to="/" /> : <Register login={login} />} />
           <Route path="/profile" element={token ? <UserProfile logout={logout} /> : <Navigate to="/login" />} 
