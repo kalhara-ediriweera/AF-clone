@@ -25,7 +25,7 @@ const UserProfile = () => {
     if (userId) {
       async function fetchUserData() {
         try {
-          const response = await axios.get(`http://localhost:5000/api/auth/user_view/${userId}`);  // Fetch user data using userId
+          const response = await axios.get(`https://af-backend-production.up.railway.app/api/auth/user_view/${userId}`);  // Fetch user data using userId
           if (response.data.success) {
             // Set user data in the state
             setUser(response.data.user);
